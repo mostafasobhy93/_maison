@@ -583,6 +583,25 @@
         autoplayHoverPause: true,
         startPosition: 'URLHash'
     });
+    
+    $(".products-slider").owlCarousel({
+        nav:false,
+        dots: true,
+        loop:true,
+        margin: 30,
+        navText: ['<i class="ot-flaticon-left-arrow"></i>', '<i class="ot-flaticon-right-arrow"></i>'],
+        responsive:{
+            1200:{
+                items:3
+            },
+            767:{
+                items:2
+            },
+            0:{
+                items:1
+            }
+        }
+     });
 
 
     /* --------------------------------------------------
