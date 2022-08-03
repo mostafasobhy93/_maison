@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
 
 .bg-dark-theratio {
     background-color: #194246;
@@ -14,10 +15,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(0 0 0 / 35%);
+    background-color: rgb(0 0 0 / 60%);
 }
 .banner-4 .main-title {
-    color: #DCB7AC;
+    color: #daa520;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
 }
 
 /* video background */
@@ -81,12 +84,20 @@
     top: 60px;
     left: 20px;
     padding: 0;
+    z-index: 99;
     display: none;
 }
 .fixed-social ul {
     list-style: none;
 }
 .fixed-social ul li a {
-    color: #DCB7AC;
+    color: #2c757c;
     font-size: 25px;
+}
+
+.ot-features-box .features-image .overlay {
+    background: rgb(255 255 255 / 50%);
+}
+.ot-features-box .features-image .overlay img {
+    width: 70%;
 }
