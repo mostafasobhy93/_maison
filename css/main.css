@@ -6,9 +6,15 @@ html {
 .bg-dark-theratio {
     background-color: #194246;
 }
+body.bg-dark-theratio, section.bg-dark-theratio {
+    background-color: #0A0A0A;
+}
 
 .octf-cta-header .octf-cta-icons i {
     color: #fff;
+}
+.s-light .studio-testi-slide-block {
+    background-color: #1A1A1A;
 }
 
 /* banner 4 */
