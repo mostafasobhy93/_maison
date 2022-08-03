@@ -1,0 +1,92 @@
+
+.bg-dark-theratio {
+    background-color: #194246;
+}
+
+/* banner 4 */
+.banner-4 {
+    padding: 0;
+}
+.banner-4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 35%);
+}
+.banner-4 .main-title {
+    color: #DCB7AC;
+}
+
+/* video background */
+.about-video video {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+}
+
+/* contact home */
+.contact-home .contact-leftSide {
+    background-color: #194246;
+    border: 30px solid #194246;
+    border-image-source: url(../images/slide-border-image-2.png);
+    border-image-slice: 117;
+    border-image-repeat: round;
+    z-index: 2;
+    text-align: center;
+    height: 320px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+}
+.contact-home .contact-leftSide .main-heading {
+    color: #DCB7AC;
+    font-size: 32px;
+    margin-bottom: 25px;
+    line-height: 35px;
+}
+.contact-home .contact-leftSide p {
+    color: #fff;
+    line-height: 1.5;
+}
+.contact-home .main-form input, 
+.contact-home .main-form textarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contact-home .main-form .octf-btn {
+    background: #194246;
+} 
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: transparent;
+}
+.contact-home .wpcf7 .main-form input::placeholder,
+.contact-home .wpcf7 .main-form textarea::placeholder {
+  text-transform: capitalize;
+    font-size: 13px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #194246;
+}
+.footer-bottom {
+    background-color: #194246;
+}
+
+.fixed-social {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    padding: 0;
+    display: none;
+}
+.fixed-social ul {
+    list-style: none;
+}
+.fixed-social ul li a {
+    color: #DCB7AC;
+    font-size: 25px;
+}
