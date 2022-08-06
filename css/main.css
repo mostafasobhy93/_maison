@@ -19,6 +19,7 @@ body.bg-dark-theratio, section.bg-dark-theratio {
 
 /* banner 4 */
 .banner-4 {
+    background-attachment: fixed;
     padding: 0;
 }
 .banner-4:before {
@@ -31,7 +32,8 @@ body.bg-dark-theratio, section.bg-dark-theratio {
     background-color: rgb(0 0 0 / 60%);
 }
 .banner-4 .main-title {
-    color: #daa520;
+/*    color: #daa520;*/
+    color: #fff;
     font-family: 'Dancing Script', cursive;
     font-size: 3.5rem;
 }
@@ -94,7 +96,7 @@ body.bg-dark-theratio, section.bg-dark-theratio {
 
 .fixed-social {
     position: fixed;
-    top: 60px;
+    top: 100px;
     left: 20px;
     padding: 0;
     z-index: 99;
@@ -106,6 +108,9 @@ body.bg-dark-theratio, section.bg-dark-theratio {
 .fixed-social ul li a {
     color: #2c757c;
     font-size: 25px;
+}
+.fixed-social ul li a svg {
+    fill: #2c757c;
 }
 
 .ot-features-box .features-image .overlay {
@@ -133,7 +138,7 @@ body.bg-dark-theratio, section.bg-dark-theratio {
     background: rgba(255, 255, 255, 0.75);
 }
 .categories-section .projects-grid .projects-box .portfolio-info h5 {
-    color: #575757;
+    color: #2c757c;
     font-size: 20px;
     font-weight: bold;
 }
@@ -163,7 +168,7 @@ body.bg-dark-theratio, section.bg-dark-theratio {
     color: #fff;
 }
 .categories-section .projects-grid .projects-box .projects-thumbnail .data-list a:hover {
-    color: #daa520;
+    color: #b87333;
 }
 
 /* products slider */

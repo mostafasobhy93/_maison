@@ -444,7 +444,7 @@ blockquote:before {
   content: "";
   top: 0;
   left: 50%;
-  background: url("https://via.placeholder.com/189x150.png");
+  background: url("../images/quote.svg");
   width: 39px;
   height: 32px;
   background-repeat: no-repeat;
@@ -7220,7 +7220,7 @@ section {
   background-color: #194246;
 }
 .page-header {
-  background-image: url('https://via.placeholder.com/1920x500.png');
+  background-image: url('../images/bg/pheader.jpg');
 }
 .page-header-contact {
   background-image: url('https://via.placeholder.com/1920x500.png');
@@ -7250,7 +7250,7 @@ section {
     background-image: url(../images/bg/pheader.jpg);
 }
 .pheader-portfolio {
-    background-image: url(https://via.placeholder.com/1920x500.png);
+    background-image: url(../images/bg/gallery-bg.jpg);
 }
 .pheader-portfolio-detail {
     background-image: url(https://via.placeholder.com/1920x500.png);
