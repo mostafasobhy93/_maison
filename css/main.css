@@ -190,7 +190,7 @@ body.bg-dark-theratio, section.bg-dark-theratio {
     transform: translateX(0);
 }
 */
-.products-slider .wrapper-icons a {
+.product .wrapper-icons a {
     margin-left: 5px;
 }
 .products-slider .owl-nav.disabled + .owl-dots {
