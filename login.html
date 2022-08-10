@@ -190,241 +190,86 @@
         </header>
 
         <div id="content" class="site-content">
-            <div class="page-header dtable text-center header-transparent pheader-portfolio">
+            <div class="page-header dtable text-center header-transparent page-header-contact">
                 <div class="dcell">
                     <div class="container">
-                        <h1 class="page-title">Portfolio Grid Masonry</h1>
+                        <h1 class="page-title">Sign In</h1>
                         <ul id="breadcrumbs" class="breadcrumbs none-style">
                             <li><a href="index.html">Home</a></li>
-                            <li class="active">Gallery</li>
-                        </ul> 
+                            <li class="active">Sign In</li>
+                        </ul>    
                     </div>
                 </div>
             </div>
         </div>
-        <section class="our-portfolio">
+
+        <section class="login-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center theratio-align-center">
-                        <div class="ot-heading is-dots">
-                            <h2 class="main-heading">Some of Our Works<br>  and Case Studies for Clients</h2>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="contact-left">
+                            <h2>Sign In</h2>
+                            <form id="ajax-form" name="ajax-form" action="contact.php" method="post" class="wpcf7">
+                                <div class="main-form">
+                                    <p>
+                                        <label for="email"> 
+                                            <span class="error text-danger" id="err-email">please enter e-mail</span>
+                                            <span class="error text-danger" id="err-emailvld">e-mail is not a valid format</span>
+                                        </label>
+                                        <input type="email" name="email" id="email" value="" size="40" class="" aria-invalid="false" placeholder="Your Email *" required>
+                                    </p>
+                                    <p>
+                                        <label for="password"> <span class="error" id="err-name">please enter password</span></label>
+                                        <input type="password" name="password" value="" size="40" class="" aria-invalid="false" placeholder="Password *" required>
+                                    </p>
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input w-auto" type="checkbox" value="" id="remember_me">
+                                        <label class="form-check-label" for="remember_me">Remember Me</label>
+                                    </div>
+                                    <p><button type="submit" id="send" class="octf-btn">Login</button></p>
+                                    <div class="clear"></div>   
+                                    <div class="error text-danger" id="err-form">There was a problem validating the form please check!</div>
+                                    <div class="error text-danger" id="err-timedout">The connection to the server timed out!</div>
+                                    <div class="error text-danger" id="err-state"></div>
+                                    <a href="#">Forgot Your Password ?</a>
+                                </div>
+                            </form>
+
+                            <div class="clear"></div>
+                            <div id="ajaxsuccess">Successfully sent!!</div>
+                            <div class="clear"></div>
                         </div>
-                        <div class="space-40"></div>
-                        <div class="project-filter-wrapper">
-                            <ul class="project_filters">
-                                <li><a href="#" data-filter="*" class="selected btn-details">All<span class="filter-count"></span></a></li>
-                                <li><a class="btn-details" href="#" data-filter=".category-14">Architecture<span class="filter-count"></span></a></li>         
-                                <li><a class="btn-details" href="#" data-filter=".category-15">Decor<span class="filter-count"></span></a></li>
-                                <li><a class="btn-details" href="#" data-filter=".category-20">Furniture<span class="filter-count"></span></a></li>
-                                <li><a class="btn-details" href="#" data-filter=".category-19">Interior<span class="filter-count"></span></a></li>
-                            </ul>
-                            <div class="projects-grid pf_3_cols style-4 img-popup img-scale w-auto">
-                                <div class="grid-sizer"></div>
-                                <div class="project-item category-19 ">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project1.jpg">
-                                            <a href="portfolio-standar.html">
-                                                <img src="images/gallery/project1.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Stylish Family Appartment</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-detail-slider.html">Stylish Family Appartment</a></h5>
-                                                <p class="portfolio-cates"><a href="#">Interior</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-detail-slider.html"></a>
-                                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="contact-left">
+                            <h2>Create an Account</h2>
+                            <form class="wpcf7">
+                                <div class="main-form">
+                                    <p>
+                                        <input type="text" size="40" class="" placeholder="Username *" required>
+                                    </p>
+                                    <p>
+                                        <input type="text" size="40" class="" placeholder="Email *" required>
+                                    </p>
+                                    <p>
+                                        <input type="password" size="40" class="" placeholder="Password *" required>
+                                    </p>
+                                    <p>
+                                        <input type="password" size="40" class="" placeholder="Confirm Password *" required>
+                                    </p>
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input w-auto" type="checkbox" value="" id="terms">
+                                        <label class="form-check-label" for="terms">I have read and agree to the website terms and conditions</label>
                                     </div>
+                                    <p><button type="submit" id="send" class="octf-btn">Register</button></p>
                                 </div>
-                                <div class="project-item category-14 ">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project2.jpg">
-                                            <a href="portfolio-detail-slider.html">
-                                                <img src="images/gallery/project2.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Minimal Guests House</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-detail-slider.html">Minimal Guests House</a></h5>
-                                                <p class="portfolio-cates">
-                                                    <a href="#">Decor</a>
-                                                    <a href="#">Interior</a>
-                                                </p>
-                                            </div>
-                                            <a class="overlay" href="portfolio-detail-slider.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-15 ">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project3.jpg">
-                                            <a href="portfolio-left.html">
-                                                <img src="images/gallery/project3.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Art Family Residence</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-left.html">Art Family Residence</a></h5>
-                                                <p class="portfolio-cates"><a href="#">Architecture</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-left.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-20 ">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project1.jpg">
-                                            <a href="portfolio-right.html">
-                                                <img src="images/gallery/project1.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Private House in Spain</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-right.html">Private House in Spain</a></h5>
-                                                <p class="portfolio-cates"><a href="#">Furniture</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-right.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-19 ">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project3.jpg">
-                                            <a href="portfolio-small.html">
-                                                <img src="images/gallery/project3.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Modern Villa in Belgium</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-small.html">Modern Villa in Belgium</a></h5>
-                                                <p class="portfolio-cates"><a href="#">Furniture</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-small.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-14 ">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project2.jpg">
-                                            <a href="portfolio-big.html">
-                                                <img src="images/gallery/project2.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Minimalistic Style Appartment</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-big.html">Minimalistic Style Appartment</a></h5>
-                                                <p class="portfolio-cates"><a href="#">Furniture</a><a href="#">interior</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-big.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-15">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project2.jpg">
-                                            <a href="portfolio-standar.html">
-                                                <img src="images/gallery/project2.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Luxury Bathroom Interior</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-standar.html">Luxury Bathroom Interior</a></h5>
-                                                <p class="portfolio-cates"><a href="#">decor</a><a href="#">Furniture</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-standar.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-14">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project3.jpg">
-                                            <a href="portfolio-detail-slider.html">
-                                                <img src="images/gallery/project3.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>Loft Kitchen Interior</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-detail-slider.html">Loft Kitchen Interior</a></h5>
-                                                <p class="portfolio-cates"><a href="#">architecture</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-detail-slider.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="project-item category-19">
-                                    <div class="projects-box">
-                                        <div class="projects-thumbnail" data-src="images/gallery/project1.jpg">
-                                            <a href="portfolio-left.html">
-                                                <img src="images/gallery/project1.jpg" alt="">
-                                            </a>
-                                            <div class="overlay">
-                                                <h5>White Italian Villa</h5>
-                                                <i class="ot-flaticon-add"></i>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio-info">
-                                            <div class="portfolio-info-inner">
-                                                <h5><a class="title-link" href="portfolio-left.html">White Italian Villa</a></h5>
-                                                <p class="portfolio-cates"><a href="#">decor</a></p> 
-                                            </div>
-                                            <a class="overlay" href="portfolio-left.html"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="btn-block text-center">
-                                <a href="portfolio-five-column-wide.html" class="btn-loadmore octf-btn">Read More</a>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- fixed social -->
-        <div class="fixed-social">
-            <ul>
-                <li class="mb-3"><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="mb-3"><a href="http://linkedin.com" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
-                    </a>
-                </li>
-                <li class="mb-3"><a href="http://twitter.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li class="mb-3"><a href="http://instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
 
     <footer id="site-footer" class="site-footer">
         <div class="container">
@@ -520,6 +365,7 @@
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script>
         window.jQuery = window.$ = jQuery;  
@@ -527,7 +373,7 @@
             //Preloader
             Royal_Preloader.config({
                 mode           :   'progress',
-                background     :   '#194246',
+                background     :   '#1a1a1a',
             });
         })(jQuery);
     </script>  
