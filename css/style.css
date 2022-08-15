@@ -746,6 +746,7 @@ big {
 }
 .btn-play i:before {
   margin-left: 2px;
+    vertical-align: middle;
 }
 .btn-play:before {
   content: "";
@@ -7253,7 +7254,7 @@ section {
     background-image: url(../images/bg/gallery-bg.jpg);
 }
 .pheader-portfolio-detail {
-    background-image: url(https://via.placeholder.com/1920x500.png);
+    background-image: url(../images/bg/pheader.jpg);
 }
 
 /* Post */
