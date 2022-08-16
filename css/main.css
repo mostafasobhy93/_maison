@@ -215,6 +215,17 @@ body.bg-dark-theratio, section.bg-dark-theratio {
     font-size: 22px;
 }
 
+.gallery-post .item-video {
+    position: relative;
+}
+.gallery-post .item-video .item-video-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
 
 /* responsive */
 @media(max-width: 1199px) {
